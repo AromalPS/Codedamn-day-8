@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;600;&display=swap");
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+/* 
+List of colors used 
+
+Title / Heading - #111827 
+Blog Title - #4f46e5 
+Description - #6b7280 
+
+
+*/
+
+
+.header {
+	display: block;
+	text-align: center;
+	margin: 50px auto 0 auto;
+	max-width: 600px;
+	color: #111827;
+}
+
+.header p {
+	color: #6b7280;
+}
+
+.blogs {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.blog {
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	margin: 10px;
+	box-shadow: 0px 2px 4px #b6b6b6;
+}
+
+.blog img {
+	height: 150px;
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
+}
+
+.content {
+	margin: 20px;
+	padding-bottom: 40px;
+}
+
+.content span {
+	color: #4f46e5;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.content h4 {
+	margin: 5px 0;
+	color: #111827;
+}
+
+.content p {
+	font-size: 14px;
+	color: #6b7280;
+}
+
+.user {
+	position: absolute;
+	bottom: 20px;
+	display: flex;
+}
+
+.user img {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	max-height: 30px;
+	max-width: 30px;
+}
+
+.profie-details {
+	margin-left: 10px;
+}
+
+.profie-details span {
+	color: #111827;
+	font-size: 12px;
+}
+
+.profie-details p {
+	margin: 2px 0;
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 728px) {
+	.blogs {
+		display: block;
+	}
+
+	.user {
+		position: relative;
+		bottom: 0;
+	}
+
+	.content {
+		padding-bottom: 15px;
+	}
+}
